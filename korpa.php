@@ -1,7 +1,7 @@
 <?php require 'skripte/funkcije.php' ?>
 
 <?php
-
+//početak sesije
 session_start();
 
 if (isset($_GET['action']) && $_GET['action'] == 'remove') {
@@ -16,9 +16,7 @@ if (isset($_GET['action']) && $_GET['action'] == 'remove') {
     header("Location: korpa.php");
     exit();
 }
-
 ?>
-
 
 <!DOCTYPE html>
 <html lang="srb">
