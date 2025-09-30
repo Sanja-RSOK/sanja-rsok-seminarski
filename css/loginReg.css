@@ -1,0 +1,96 @@
+body
+{
+    background-color: rgb(235, 235, 235);
+}
+
+.profilCeo {
+    margin: 10% 0%;
+    margin-left: 33%;
+    left: 33%;
+    top: 20%;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 33%;
+    width: 100%;
+    backdrop-filter: blur(20px);
+    z-index: 1;
+    filter: blur(0px);
+    background-color: white;
+}
+
+.loginReg
+{
+    font-family: var(--lexendFont);
+    padding: 2% 2%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+}
+
+.loginReg label {
+    margin-bottom: 5px;
+}
+
+.loginReg input{
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+
+}
+
+.loginReg button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color:rgb(245, 245, 245);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+
+.loginReg button:hover {
+    background-color: transparent;
+}
+
+h3
+{
+    text-align: center;
+}
+
+.nemateNalog
+{
+    text-align: center;
+    padding-top: 1%;
+}
+
+@media (max-width:799px)
+{
+    .profilCeo
+    {
+        margin-top: 20%;
+        max-width: 50%!important;
+        margin-left: 25%!important;    }
+}
+@media (min-width:800px) and (max-width: 1500px)
+{
+    .profilCeo
+    {
+        margin-top: 15%;
+        max-width: 50%!important;
+        margin-left: 25%!important;
+
+
+    }
+}
+
+@media (max-width:580px)
+{
+    .profilCeo
+    {
+        margin-top: 25%;
+        max-width: 70%!important;
+        margin-left: 15%!important;    }
+}

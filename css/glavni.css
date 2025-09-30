@@ -1,0 +1,393 @@
+:root
+{
+    --quickFont: Quicksand;
+    --opensansFont: "Alata", sans-serif;
+    --lexendFont: Lexend;
+}
+body
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.topara
+{
+    display: block;
+    background-color: rgb(238, 238, 238);
+    font-family: var(--quickFont);
+    text-align: right;
+    font-weight: 500;
+    position:fixed;
+    width: 100%;
+    z-index: 1000;
+}
+.info   
+{
+    padding: 5px 0px;
+}
+.goreDesno
+{
+    font-size: 1.4rem;
+    padding-right: 1%;
+}
+
+.navigacioniMeni
+{
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.144);
+    padding-top: 0.5%;
+    padding-left: 1%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.direkcija
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 33%;
+}
+.levo
+{
+    justify-content: flex-start;
+}
+.desno
+{
+    justify-content: flex-end;
+    flex-grow: 1;
+    margin-right: 3%;
+
+}
+
+
+.monaPocetnaLink
+{
+    margin-left: 2%;
+    font-family: var(--lexendFont);
+    font-weight: 700;
+    font-size: 3.5em;
+    color: rgb(34, 34, 34);
+    letter-spacing: -1px;
+}
+.monaPocetnaLink:hover
+{
+    color: black;
+    text-decoration: none;
+}
+
+.navDugmici
+{
+    display: flex;
+    list-style-type: none;
+    gap: 10%;
+}
+
+
+
+.bannerSlajder {
+    width: 100%;
+    margin: 20px auto; /* Dodaće se razmak između navigacije i slajdera */
+    overflow:hidden;
+    height: 70vh;
+}
+
+.lista-slika {
+    margin-top: 5%;
+    display: flex;
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+    height: 60vh;
+    max-width: 100%;
+}
+
+/* Dugmad za navigaciju kroz slike */
+.slajder-dugme {
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    padding: 2% 0px;
+}
+.lista-slika img {
+    min-width: 100%;
+    height: auto;
+    object-fit: cover;
+max-height: 100%;
+max-width: 100%;}
+
+.pos-dugme {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #000000;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.pos-dugme.active {
+    background-color: #333;
+}
+
+/* Media queries za manje ekrane */
+/* Za tablete i mobilne uređaje */
+@media (max-width: 768px) {
+    .bannerSlajder {
+        max-width: 100%;
+    }
+
+    .pos-dugme {
+        width: 12px;
+        height: 12px; /* Smanji dugmad */
+    }
+}
+
+@media (max-width: 480px) {
+    .pos-dugme {
+        width: 10px;
+        height: 10px;
+    }
+    .izabrano h3
+    {
+        text-align: center;
+    }
+    .produktiSlajder
+    {
+        gap: 15%;
+    }
+    .donjaLinijaGlavna
+    {
+        font-size: 1.3rem;
+    }
+
+}
+
+@media (max-width: 1133px) {
+    .izabrano h3
+    {
+        text-align: center;
+    }
+}
+
+
+.izabrano
+{
+    margin-left: 1%;
+    
+}
+.izabrano h3
+{
+    padding: 1.5% 0px;
+}
+.produktiSlajder
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+.produktiLista
+{
+    display: flex;
+    transition: transform 0.3s ease;
+    margin-bottom: 3%;
+    gap: 2%;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 2% 0px;
+
+}
+.slikeProdukta
+{
+    width: 100%;
+    max-width: 250px;
+    height: 310px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+
+
+}
+.produktiPosebno
+{
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 0.5%;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.produktiPosebno a
+{
+    color: #333;
+}
+
+.produktiPosebno a:hover
+{
+    text-decoration: none;
+}
+
+.donjaLinijaGlavna
+{
+    background-color: rgb(238, 238, 238);
+    font-family: var(--lexendFont);
+    font-size: 2rem;
+    padding: 1%;
+    text-align: center;
+}
+
+.donjaLinijaGlavna a
+{
+    color: #333;
+}
+
+.hamburger
+{
+    font-family: var(--lexendFont);
+    color: #333;
+}
+.pratiteNas-toggle
+{
+    border: none;
+    background-color: transparent;
+
+}
+.pratiteNas-toggle:hover
+{
+    text-decoration: underline;
+}
+
+.bloker
+{
+    display: none;
+    text-align: center;
+}
+.aktivno
+{
+    display: block;
+}
+
+.test
+{
+    color:rgb(223, 223, 223);
+}
+footer
+{
+    text-align: center;
+    width: 100%;
+}
+
+footer>p
+{
+    background-color: #333;
+    color: white;
+    padding: 0.6%;
+    margin: 0;
+    width: 100%;
+}
+
+.strelica
+{
+    width: 12.5px;
+    height: 15px;
+}
+#message
+{
+    border-color: #b1b1b1;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.menu-container {
+    flex-direction: column;
+    justify-content: space-around;
+    width: 35px;
+    height: 25px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.menu-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    left: 20px;
+    z-index: 1001;
+}
+
+.line {
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    transition: 0.3s;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.side-menu {
+    position: fixed;
+    left: -400px;
+    top: 0;
+    width: 400px;
+    height: 100%;
+    background-color: #1d1d1dc5;
+    transition: 0.3s;
+    z-index: 1000;
+    padding-top: 10%;
+}
+
+.side-menu ul {
+    list-style-type: none;
+    list-style: none;
+    padding: 0;
+}
+
+.side-menu ul li {
+    margin: 20px 0;
+    padding-right: 50%;
+    text-align: left;
+}
+
+.side-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    padding-left: 20px;
+    display: block;
+}
+.side-menu ul li a:hover 
+{
+    color: rgb(126, 206, 238);
+    transition: 0.4s;
+}
+
+#menu-toggle:checked + .menu-icon .line:nth-child(1) {
+    transform: rotate(45deg) translateY(10px);
+}
+
+#menu-toggle:checked + .menu-icon .line:nth-child(2) {
+    opacity: 0;
+}
+
+#menu-toggle:checked + .menu-icon .line:nth-child(3) {
+    transform: rotate(-45deg) translateY(-10px);
+}
+
+#menu-toggle:checked ~ .side-menu {
+    left: 0;
+}
+.navigacioniDugmici a
+{
+display: none;
+}

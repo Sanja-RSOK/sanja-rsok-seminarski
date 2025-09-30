@@ -1,0 +1,132 @@
+    .profilCeo
+    {
+        margin: 8%;
+        border: 1px solid #333;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+    .korisnikProfil
+    {
+        font-family: var(--quickFont);
+        padding: 2% 2%;
+        width: 50%;
+
+    }
+    .korisnikProfil h3
+    {
+        padding-bottom: 1%;
+    }
+    
+    .tabelicaProfil
+    {
+        width: 100%!important;
+    }
+    .table-container {
+        overflow-x: auto;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1200px;
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    thead {
+        background-color: #333;
+        color: white;
+    }
+    
+    th, td {
+        padding: 15px;
+        text-align: left;
+    }
+    
+    th {
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    
+    tbody tr:hover {
+        background-color: #e9f5ff;
+    }
+    
+    td {
+        border-bottom: 1px solid #ddd;
+    }
+    
+    tbody td {
+        font-size: 0.9em;
+    }
+    
+    tbody tr:last-child td {
+        border-bottom: none;
+    }
+    
+    /* Status stilovi */
+    td:last-child {
+        font-weight: bold;
+    }
+    
+    td:last-child[data-status="Isporučeno"] {
+        color: green;
+    }
+    
+    td:last-child[data-status="Obrada"] {
+        color: orange;
+    }
+    
+    td:last-child[data-status="Na čekanju"] {
+        color: red;
+    }
+
+    @media (max-width:799px)
+    {
+        .profilCeo
+        {
+            margin-top: 35%;
+        }
+    }
+    @media (min-width:800px) and (max-width: 1500px)
+    {
+        .profilCeo
+        {
+            margin-top: 15%;
+        }
+    }
+
+    .kupovina
+    {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 1%;
+    }
+
+    .kupi
+    {
+        background-color: #333;
+        border: none;
+    }
+    .potvrdaKupi
+    {
+        width:100%;
+        padding-top: 2%;
+    }
+    .mrdni
+    {
+        padding-top: 3%;
+    }
+    .mrdniOpet
+    {
+        width: 1%!important;
+    }
